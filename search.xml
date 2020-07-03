@@ -11,6 +11,22 @@
         <content type="html"><![CDATA[<h1 id="JS杂项"><a href="#JS杂项" class="headerlink" title="JS杂项"></a>JS杂项</h1><h2 id="js常用方法"><a href="#js常用方法" class="headerlink" title="js常用方法"></a>js常用方法</h2><ol><li><p>获取数组中的最值</p><p><code>Math.min.apply(null,Arr)</code></p></li><li><p>数据合并  对象合并</p><p><code>this.model=Object.assign({},this.model,res.data)</code></p></li><li><p><code>object.getBoundingClientRect();</code>会得到元素的<code>top、right、bottom、left、width、height</code>属性可以得到元素各个边距离页面上边和左边的距离</p></li><li><p>字符串解析为合法js执行</p><p><code>eval()</code>函数计算 JavaScript 字符串，并把它作为脚本代码来执行。</p></li><li><p><code>arr.join(&quot;&amp;&quot;)</code> 数组转成字符串，使用&amp;为分隔符</p></li><li><p>你可以使用 typeof 操作符来检测变量的数据类型。</p><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">typeof</span> <span class="token string">"John"</span>        <span class="token comment" spellcheck="true">// 返回 string</span><span class="token keyword">typeof</span> <span class="token number">3.14</span>           <span class="token comment" spellcheck="true">// 返回 number</span><span class="token keyword">typeof</span> <span class="token boolean">false</span>         <span class="token comment" spellcheck="true">// 返回 boolean</span><span class="token keyword">typeof</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span>       <span class="token comment" spellcheck="true">// 返回 object</span><span class="token keyword">typeof</span> <span class="token punctuation">{</span>name<span class="token punctuation">:</span><span class="token string">'John'</span><span class="token punctuation">,</span> age<span class="token punctuation">:</span><span class="token number">34</span><span class="token punctuation">}</span> <span class="token comment" spellcheck="true">// 返回 object</span></code></pre></li></ol>]]></content>
       
       
+      <categories>
+          
+          <category> js </category>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> js </tag>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -24,6 +40,22 @@
         <content type="html"><![CDATA[<h2 id="常用的css属性"><a href="#常用的css属性" class="headerlink" title="常用的css属性"></a>常用的css属性</h2><pre class=" language-css"><code class="language-css"><span class="token selector">z-index: 5;     设置权重，数字大的显示在上面，默认为1overflow: hidden;  可以用来清除浮动效果（给有浮动效果的父元素添加），溢出元素的部分隐藏opacity: 50%;   设置元素的透明度p<span class="token pseudo-class">:first-of-type</span><span class="token pseudo-element">:before</span></span><span class="token punctuation">{</span><span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">'\e786'</span><span class="token punctuation">;</span>    <span class="token property">content</span> <span class="token punctuation">:</span> 用来给伪元素添加内容<span class="token punctuation">}</span><span class="token property">overflow-y</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>  设置内容溢出的时候出现滚动条<span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>     设置鼠标样式object-fit ：cover  设置图片的填充方式</code></pre><h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="让超出两行的部分显示省略号"><a href="#让超出两行的部分显示省略号" class="headerlink" title="让超出两行的部分显示省略号"></a>让超出两行的部分显示省略号</h2><p><img src="https://ae01.alicdn.com/kf/H27c334643b3349bb82ba1d265c67aaba2.jpg" alt=""></p><pre class=" language-css"><code class="language-css"> <span class="token property">display</span><span class="token punctuation">:</span> -webkit-box<span class="token punctuation">;</span>  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>  <span class="token property">-webkit-box-orient</span><span class="token punctuation">:</span> vertical<span class="token punctuation">;</span>  <span class="token property">-webkit-line-clamp</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">;</span></code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> css </category>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+            <tag> css </tag>
+            
+        </tags>
       
     </entry>
     
