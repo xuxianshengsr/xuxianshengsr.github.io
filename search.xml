@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>JS杂项--随笔</title>
+      <link href="/2020/07/03/js-za-xiang-sui-bi/"/>
+      <url>/2020/07/03/js-za-xiang-sui-bi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="JS杂项"><a href="#JS杂项" class="headerlink" title="JS杂项"></a>JS杂项</h1><h2 id="js常用方法"><a href="#js常用方法" class="headerlink" title="js常用方法"></a>js常用方法</h2><ol><li><p>获取数组中的最值</p><p><code>Math.min.apply(null,Arr)</code></p></li><li><p>数据合并  对象合并</p><p><code>this.model=Object.assign({},this.model,res.data)</code></p></li><li><p><code>object.getBoundingClientRect();</code>会得到元素的<code>top、right、bottom、left、width、height</code>属性可以得到元素各个边距离页面上边和左边的距离</p></li><li><p>字符串解析为合法js执行</p><p><code>eval()</code>函数计算 JavaScript 字符串，并把它作为脚本代码来执行。</p></li><li><p><code>arr.join(&quot;&amp;&quot;)</code> 数组转成字符串，使用&amp;为分隔符</p></li><li><p>你可以使用 typeof 操作符来检测变量的数据类型。</p><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">typeof</span> <span class="token string">"John"</span>        <span class="token comment" spellcheck="true">// 返回 string</span><span class="token keyword">typeof</span> <span class="token number">3.14</span>           <span class="token comment" spellcheck="true">// 返回 number</span><span class="token keyword">typeof</span> <span class="token boolean">false</span>         <span class="token comment" spellcheck="true">// 返回 boolean</span><span class="token keyword">typeof</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span>       <span class="token comment" spellcheck="true">// 返回 object</span><span class="token keyword">typeof</span> <span class="token punctuation">{</span>name<span class="token punctuation">:</span><span class="token string">'John'</span><span class="token punctuation">,</span> age<span class="token punctuation">:</span><span class="token number">34</span><span class="token punctuation">}</span> <span class="token comment" spellcheck="true">// 返回 object</span></code></pre></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>css杂项--随笔</title>
       <link href="/2020/07/03/css-za-xiang-sui-bi/"/>
       <url>/2020/07/03/css-za-xiang-sui-bi/</url>
