@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JS杂项--随笔, 徐先生">
+    <meta name="keywords" content="什么是webpack？为什么要使用webpack？有什么优点和特点, 徐先生">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JS杂项--随笔 | 徐先生</title>
+    <title>什么是webpack？为什么要使用webpack？有什么优点和特点 | 徐先生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JS杂项--随笔</h1>
+                    <h1 class="description center-align post-title">什么是webpack？为什么要使用webpack？有什么优点和特点</h1>
                 </div>
             </div>
         </div>
@@ -430,12 +430,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/js/">
-                                <span class="chip bg-color">js</span>
-                            </a>
-                        
-                            <a href="/tags/%E9%9A%8F%E7%AC%94/">
-                                <span class="chip bg-color">随笔</span>
+                            <a href="/tags/webpack/">
+                                <span class="chip bg-color">webpack</span>
                             </a>
                         
                     </div>
@@ -446,12 +442,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/js/" class="post-category">
-                                js
-                            </a>
-                        
-                            <a href="/categories/js/%E9%9A%8F%E7%AC%94/" class="post-category">
-                                随笔
+                            <a href="/categories/webpack/" class="post-category">
+                                webpack
                             </a>
                         
                     </div>
@@ -477,14 +469,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    175
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -499,32 +491,72 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="JS杂项"><a href="#JS杂项" class="headerlink" title="JS杂项"></a>JS杂项</h1><h2 id="js常用方法"><a href="#js常用方法" class="headerlink" title="js常用方法"></a>js常用方法</h2><ol>
-<li><p>获取数组中的最值</p>
-<p><code>Math.min.apply(null,Arr)</code></p>
+                <h1 id="什么是webpack？为什么要使用它？"><a href="#什么是webpack？为什么要使用它？" class="headerlink" title="什么是webpack？为什么要使用它？"></a>什么是webpack？为什么要使用它？</h1><ol>
+<li><p>什么是webpack</p>
+<p>WebPack可以看做是模块打包机：它做的事情是，分析你的项目结构，找到JavaScript模块以及其它的一些浏览器不能直接运行的拓展语言（Scss，TypeScript等），并将其打包为合适的格式以供浏览器使用</p>
 </li>
-<li><p>数据合并  对象合并</p>
-<p><code>this.model=Object.assign({},this.model,res.data)</code></p>
+<li><p>为什么要使用webpack</p>
+<ul>
+<li><p>模块化，让我们可以把复杂的程序细化为小的文件</p>
 </li>
-<li><p><code>object.getBoundingClientRect();</code>会得到元素的<code>top、right、bottom、left、width、height</code>属性可以得到元素各个边距离页面上边和左边的距离</p>
+<li><p>类似于TypeScript这种在JavaScript基础上拓展的开发语言：使我们能够实现目前版本的JavaScript不能直接使用的特性，并且之后还能能装换为JavaScript文件使浏览器可以识别</p>
 </li>
-<li><p>字符串解析为合法js执行</p>
-<p><code>eval()</code>函数计算 JavaScript 字符串，并把它作为脚本代码来执行。</p>
+<li><p>scss，less等CSS预处理器</p>
 </li>
-<li><p><code>arr.join(&quot;&amp;&quot;)</code> 数组转成字符串，使用&amp;为分隔符</p>
+<li><p>……</p>
 </li>
-<li><p>你可以使用 typeof 操作符来检测变量的数据类型。</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">typeof</span> <span class="token string">"John"</span>        <span class="token comment" spellcheck="true">// 返回 string</span>
-
-<span class="token keyword">typeof</span> <span class="token number">3.14</span>           <span class="token comment" spellcheck="true">// 返回 number</span>
-
-<span class="token keyword">typeof</span> <span class="token boolean">false</span>         <span class="token comment" spellcheck="true">// 返回 boolean</span>
-
-<span class="token keyword">typeof</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span>       <span class="token comment" spellcheck="true">// 返回 object</span>
-
-<span class="token keyword">typeof</span> <span class="token punctuation">{</span>name<span class="token punctuation">:</span><span class="token string">'John'</span><span class="token punctuation">,</span> age<span class="token punctuation">:</span><span class="token number">34</span><span class="token punctuation">}</span> <span class="token comment" spellcheck="true">// 返回 object</span></code></pre>
+</ul>
+</li>
+<li><p>webpack的工作方式</p>
+<p>把你的项目当做一个整体，通过一个给定的主文件（如：index.js），Webpack将从这个文件开始找到你的项目的所有依赖文件，使用loaders处理它们，最后打包为一个浏览器可识别的JavaScript文件。</p>
 </li>
 </ol>
+<h1 id="webpack有什么优点？"><a href="#webpack有什么优点？" class="headerlink" title="webpack有什么优点？"></a>webpack有什么优点？</h1><ol>
+<li><p>模块化</p>
+<p>能被模块化的不仅仅是 JS。<a href="https://blog.csdn.net/hdchangchang/article/details/80183501" target="_blank" rel="noopener">webpack模块化</a></p>
+</li>
+<li><p>css</p>
+<p>webpack提供两个工具处理样式表，<code>css-loader</code> 和 <code>style-loader</code>，二者处理的任务不同，<code>css-loader</code>使你能够使用类似<code>@import</code> 和 <code>url(...)</code>的方法实现 <code>require()</code>的功能,<code>style-loader</code>将所有的计算后的样式加入页面中，二者组合在一起使你能够把样式表嵌入webpack打包后的JS文件中。</p>
+</li>
+<li><p>css modules</p>
+<p>在过去的一些年里，JavaScript通过一些新的语言特性，更好的工具以及更好的实践方法（比如说模块化）发展得非常迅速。模块使得开发者把复杂的代码转化为小的，干净的，依赖声明明确的单元，且基于优化工具，依赖管理和加载管理可以自动完成。<br>不过前端的另外一部分，CSS发展就相对慢一些，大多的样式表却依旧是巨大且充满了全局类名，这使得维护和修改都非常困难和复杂。</p>
+<p>最近有一个叫做 CSS modules 的技术就意在把JS的模块化思想带入CSS中来，通过CSS模块，所有的类名，动画名默认都只作用于当前模块。Webpack从一开始就对CSS模块化提供了支持，在CSS loader中进行配置后，你所需要做的一切就是把”modules“传递都所需要的地方，然后就可以直接把CSS的类名传递到组件的代码中，且这样做只对当前组件有效，不必担心在不同的模块中具有相同的类名可能会造成的问题。</p>
+</li>
+<li><p>css预编译</p>
+<p>Sass 和 Less之类的预处理器是对原生CSS的拓展，它们允许你使用类似于variables, nesting, mixins, inheritance等不存在于CSS中的特性来写CSS，CSS预处理器可以这些特殊类型的语句转化为浏览器可识别的CSS语句，<br>你现在可能都已经熟悉了，在webpack里使用相关loaders进行配置就可以使用了，以下是常用的CSS 处理loaders</p>
+<ul>
+<li>less-loader</li>
+<li>sass-loader</li>
+<li>stylus-loader</li>
+</ul>
+<p>还有一个CSS处理平台-PostCSS，可以让你用CSS事先更多功能，比如如何使用PostCSS，    我们使用PostCSS来为CSS代码自动添加适应不同浏览器的CSS前缀。<br>首先安装postcss-loader 和 autoprefixer（自动添加前缀的插件）</p>
+</li>
+<li><p>轻松使用es6</p>
+<p>因为webpack可以在浏览器不支持es6的情况下让你使用es6语法，最新的webpack版本已经不需要配置也能过变异es6语法，之前的版本都需要加入babel加载器才可以打包es6。</p>
+</li>
+<li><p>打包文件</p>
+</li>
+<li><p>减少界面请求数量</p>
+<p>许多图片图表都是放到一张图片上的，这样做的原因是因为能过减少图片体积，同样的将js，css文件打包也可以减少体积使几面加载的更快</p>
+</li>
+<li><p>顶级应用spa模式即单页面应用。</p>
+</li>
+</ol>
+<h1 id="webpack有什么特点？"><a href="#webpack有什么特点？" class="headerlink" title="webpack有什么特点？"></a>webpack有什么特点？</h1><h2 id="代码拆分（支持异步模块加载）"><a href="#代码拆分（支持异步模块加载）" class="headerlink" title="代码拆分（支持异步模块加载）"></a>代码拆分（支持异步模块加载）</h2><blockquote>
+<p>Webpack 有两种组织模块依赖的方式，同步(默认)和异步（高级）。异步依赖作为分割点，形成一个新的块。在优化了依赖树后，每一个异步区块都作为一个文件被打包。</p>
+</blockquote>
+<h2 id="Loader（支持任意模块加载，比如图片、less、css等等）"><a href="#Loader（支持任意模块加载，比如图片、less、css等等）" class="headerlink" title="Loader（支持任意模块加载，比如图片、less、css等等）"></a>Loader（支持任意模块加载，比如图片、less、css等等）</h2><blockquote>
+<p>Webpack 本身只能处理原生的 JavaScript 模块，但是 loader 转换器可以将各种类型的资源转换成 JavaScript 模块。这样，任何资源都可以成为 Webpack 可以处理的模块。</p>
+</blockquote>
+<h2 id="智能解析"><a href="#智能解析" class="headerlink" title="智能解析"></a>智能解析</h2><blockquote>
+<p>Webpack 有一个智能解析器，几乎可以处理任何第三方库，无论它们的模块形式是 CommonJS、 AMD 还是普通的 JS 文件。甚至在加载依赖的时候，允许使用动态表达式 require(“./templates/“ + name + “.jade”)。</p>
+</blockquote>
+<h2 id="插件系统"><a href="#插件系统" class="headerlink" title="插件系统"></a>插件系统</h2><blockquote>
+<p>Webpack 还有一个功能丰富的插件系统。大多数内容功能都是基于这个插件系统运行的，还可以开发和使用开源的 Webpack 插件，来满足各式各样的需求。</p>
+</blockquote>
+<h2 id="快速运行"><a href="#快速运行" class="headerlink" title="快速运行"></a>快速运行</h2><blockquote>
+<p>Webpack 使用异步 I/O （NodeJs）和多级“缓存”提高运行效率，这使得 Webpack 能够以令人难以置信的速度快速增量编译。</p>
+</blockquote>
 
             </div>
             <hr/>
@@ -550,7 +582,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xuxiansheng.top/2020/07/03/js-za-xiang-sui-bi/">http://xuxiansheng.top/2020/07/03/js-za-xiang-sui-bi/</a>
+                    <a href="http://xuxiansheng.top/2020/07/03/shi-me-shi-webpack-wei-shi-me-yao-shi-yong-webpack-you-shi-me-you-dian-he-te-dian/">http://xuxiansheng.top/2020/07/03/shi-me-shi-webpack-wei-shi-me-yao-shi-yong-webpack-you-shi-me-you-dian-he-te-dian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -588,12 +620,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/js/">
-                                    <span class="chip bg-color">js</span>
-                                </a>
-                            
-                                <a href="/tags/%E9%9A%8F%E7%AC%94/">
-                                    <span class="chip bg-color">随笔</span>
+                                <a href="/tags/webpack/">
+                                    <span class="chip bg-color">webpack</span>
                                 </a>
                             
                         </div>
@@ -761,9 +789,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/07/03/shi-me-shi-webpack-wei-shi-me-yao-shi-yong-webpack-you-shi-me-you-dian-he-te-dian/">
                     <div class="card-image">
@@ -783,9 +812,9 @@ WebPack可以看做是模块打包机：它做的事情是，分析你的项目�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -798,6 +827,7 @@ WebPack可以看做是模块打包机：它做的事情是，分析你的项目�
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -816,21 +846,26 @@ WebPack可以看做是模块打包机：它做的事情是，分析你的项目�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/03/css-za-xiang-sui-bi/">
+                <a href="/2020/07/03/js-za-xiang-sui-bi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="css杂项--随笔">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="JS杂项--随笔">
                         
-                        <span class="card-title">css杂项--随笔</span>
+                        <span class="card-title">JS杂项--随笔</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            常用的css属性z-index: 5;     设置权重，数字大的显示在上面，默认为1
-overflow: hidden;  可以用来清除浮动效果（给有浮动效果的父元素添加），溢出元素的部分隐藏
-opacity: 50%;   设置元素的透
+                            JS杂项js常用方法
+获取数组中的最值
+Math.min.apply(null,Arr)
+
+数据合并  对象合并
+this.model=Object.assign({},this.model,res.data)
+
+object.getBou
                         
                     </div>
                     <div class="publish-info">
@@ -841,11 +876,11 @@ opacity: 50%;   设置元素的透
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/css/" class="post-category">
-                                    css
+                            <a href="/categories/js/" class="post-category">
+                                    js
                                 </a>
                             
-                            <a href="/categories/css/%E9%9A%8F%E7%AC%94/" class="post-category">
+                            <a href="/categories/js/%E9%9A%8F%E7%AC%94/" class="post-category">
                                     随笔
                                 </a>
                             
@@ -856,12 +891,12 @@ opacity: 50%;   设置元素的透
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%9A%8F%E7%AC%94/">
-                        <span class="chip bg-color">随笔</span>
+                    <a href="/tags/js/">
+                        <span class="chip bg-color">js</span>
                     </a>
                     
-                    <a href="/tags/css/">
-                        <span class="chip bg-color">css</span>
+                    <a href="/tags/%E9%9A%8F%E7%AC%94/">
+                        <span class="chip bg-color">随笔</span>
                     </a>
                     
                 </div>
