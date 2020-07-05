@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="css杂项--随笔, 徐先生">
+    <meta name="keywords" content="js常用的数组方法, 徐先生">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>css杂项--随笔 | 徐先生</title>
+    <title>js常用的数组方法 | 徐先生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">css杂项--随笔</h1>
+                    <h1 class="description center-align post-title">js常用的数组方法</h1>
                 </div>
             </div>
         </div>
@@ -430,12 +430,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E9%9A%8F%E7%AC%94/">
-                                <span class="chip bg-color">随笔</span>
-                            </a>
-                        
-                            <a href="/tags/css/">
-                                <span class="chip bg-color">css</span>
+                            <a href="/tags/js/">
+                                <span class="chip bg-color">js</span>
                             </a>
                         
                     </div>
@@ -446,12 +442,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/css/" class="post-category">
-                                css
-                            </a>
-                        
-                            <a href="/categories/css/%E9%9A%8F%E7%AC%94/" class="post-category">
-                                随笔
+                            <a href="/categories/js/" class="post-category">
+                                js
                             </a>
                         
                     </div>
@@ -463,28 +455,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-03
+                    2020-07-05
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-03
+                    2020-07-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    149
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -499,20 +491,216 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="常用的css属性"><a href="#常用的css属性" class="headerlink" title="常用的css属性"></a>常用的css属性</h2><pre class=" language-css"><code class="language-css"><span class="token selector">z-index: 5;     设置权重，数字大的显示在上面，默认为1
-overflow: hidden;  可以用来清除浮动效果（给有浮动效果的父元素添加），溢出元素的部分隐藏
-opacity: 50%;   设置元素的透明度
-p<span class="token pseudo-class">:first-of-type</span><span class="token pseudo-element">:before</span></span><span class="token punctuation">{</span>
-<span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">'\e786'</span><span class="token punctuation">;</span>    <span class="token property">content</span> <span class="token punctuation">:</span> 用来给伪元素添加内容
-<span class="token punctuation">}</span>
-<span class="token property">overflow-y</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>  设置内容溢出的时候出现滚动条
-<span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>     设置鼠标样式
-object-fit ：cover  设置图片的填充方式</code></pre>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="让超出两行的部分显示省略号"><a href="#让超出两行的部分显示省略号" class="headerlink" title="让超出两行的部分显示省略号"></a>让超出两行的部分显示省略号</h2><p><img src="https://ae01.alicdn.com/kf/H27c334643b3349bb82ba1d265c67aaba2.jpg" alt=""></p>
-<pre class=" language-css"><code class="language-css"> <span class="token property">display</span><span class="token punctuation">:</span> -webkit-box<span class="token punctuation">;</span>
-  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
-  <span class="token property">-webkit-box-orient</span><span class="token punctuation">:</span> vertical<span class="token punctuation">;</span>
-  <span class="token property">-webkit-line-clamp</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">;</span></code></pre>
+                <h2 id="遍历方法"><a href="#遍历方法" class="headerlink" title="遍历方法"></a>遍历方法</h2><h3 id="1-every"><a href="#1-every" class="headerlink" title="1.every()"></a>1.every()</h3><blockquote>
+<p>接收一个函数</p>
+<p>传入一个函数，使用函数检测数组所有元素是否都符合指定条件（通过函数提供）</p>
+<ul>
+<li><p>如果数组中检测到有一个元素不满足，则整个表达式返回 false ，且剩余的元素不会再进行检测。</p>
+</li>
+<li><p>如果所有元素都满足条件，则返回 true。 </p>
+</li>
+</ul>
+<p>注意：every() 不会对空数组进行检测。</p>
+<p>注意：every() 不会改变原始数组。</p>
+<p>注意：一定要return 一个表达式或者布尔值<br>| 参数  | 描述                         |<br>| —– | —————————- |<br>| value | 必须。当前元素               |<br>| index | 可选。当前元素索引           |<br>| arr   | 可选。当前元素属于的数组对象 |<br>检测数组 <em>ages</em> 的所有元素是否都大于等于 18</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> ages <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">32</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">checkAdult</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> age <span class="token operator">>=</span> <span class="token number">18</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>返回值是 false</p>
+</blockquote>
+<h3 id="2-filter"><a href="#2-filter" class="headerlink" title="2.filter()"></a>2.filter()</h3><blockquote>
+<p>接收一个函数</p>
+<p>filter() 方法创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。</p>
+<p><strong>注意：</strong> filter() 不会对空数组进行检测。</p>
+<p><strong>注意：</strong> filter() 不会改变原始数组。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>value</td>
+<td>必须。当前元素</td>
+</tr>
+<tr>
+<td>index</td>
+<td>可选。当前元素索引</td>
+</tr>
+<tr>
+<td>arr</td>
+<td>可选。当前元素属于的数组对象</td>
+</tr>
+<tr>
+<td>返回数组 <em>ages</em> 中所有元素都大于 18 的元素</td>
+<td></td>
+</tr>
+</tbody></table>
+<pre><code>var ages = [32, 33, 16, 40];
+function checkAdult(age) {
+     return age &gt;= 18;
+}</code></pre><p>输出结果是 32， 33， 40</p>
+</blockquote>
+<h3 id="3-find"><a href="#3-find" class="headerlink" title="3.find()"></a>3.find()</h3><blockquote>
+<p>接收一个函数</p>
+<p>find() 方法返回满足测试（函数内判断）的数组的第一个元素的值。</p>
+<p>find() 方法为数组中的每个元素都调用一次函数执行：</p>
+<ul>
+<li>当数组中的元素在测试条件时返回 <em>true</em> 时, find() 返回符合条件的元素，之后的值不会再调用执行函数。</li>
+<li>如果没有符合条件的元素返回 undefined</li>
+</ul>
+<p><strong>注意:</strong> find() 对于空数组，函数是不会执行的。</p>
+<p><strong>注意:</strong> find() 并没有改变数组的原始值。</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><em>currentValue</em></td>
+<td align="left">必需。当前元素</td>
+</tr>
+<tr>
+<td align="left"><em>index</em></td>
+<td align="left">可选。当前元素的索引值</td>
+</tr>
+<tr>
+<td align="left"><em>arr</em></td>
+<td align="left">可选。当前元素所属的数组对象</td>
+</tr>
+</tbody></table>
+<p>获取数组中年龄大于 18 的第一个元素</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> ages <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">checkAdult</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> age <span class="token operator">>=</span> <span class="token number">18</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>输出结果是 18</p>
+</blockquote>
+<h3 id="4-findIndex"><a href="#4-findIndex" class="headerlink" title="4.findIndex()"></a>4.findIndex()</h3><blockquote>
+<p>接收一个函数</p>
+<p>findIndex() 方法返回传入一个测试条件（函数）符合条件的数组第一个元素位置。</p>
+<p>findIndex() 方法为数组中的每个元素都调用一次函数执行：</p>
+<ul>
+<li>当数组中的元素在测试条件时返回 <em>true</em> 时, findIndex() 返回符合条件的元素的索引位置，之后的值不会再调用执行函数。</li>
+<li>如果没有符合条件的元素返回 -1</li>
+</ul>
+<p><strong>注意:</strong> findIndex() 对于空数组，函数是不会执行的。</p>
+<p><strong>注意:</strong> findIndex() 并没有改变数组的原始值。</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><em>currentValue</em></td>
+<td align="left">必需。当前元素</td>
+</tr>
+<tr>
+<td align="left"><em>index</em></td>
+<td align="left">可选。当前元素的索引</td>
+</tr>
+<tr>
+<td align="left"><em>arr</em></td>
+<td align="left">可选。当前元素所属的数组对象</td>
+</tr>
+</tbody></table>
+<p>获取数组中年龄大于等于 18 的第一个元素索引位置</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> ages <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">checkAdult</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> age <span class="token operator">>=</span> <span class="token number">18</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>输出结果是 2</p>
+</blockquote>
+<h3 id="5-includes"><a href="#5-includes" class="headerlink" title="5.includes()"></a>5.includes()</h3><blockquote>
+<p>接收一个值</p>
+<p>includes() 方法用来判断一个数组是否包含一个指定的值，如果是返回 true，否则false。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">// true</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">// false</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// false</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">NaN</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token number">NaN</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span></code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><em>searchElement</em></td>
+<td align="left">必须。需要查找的元素值。</td>
+</tr>
+<tr>
+<td align="left"><em>fromIndex</em></td>
+<td align="left">可选。从该索引处开始查找 searchElement。如果为负值，则按升序从 array.length + fromIndex 的索引开始搜索。默认为 0。</td>
+</tr>
+</tbody></table>
+</blockquote>
+<h3 id="6-indexOf"><a href="#6-indexOf" class="headerlink" title="6.indexOf()"></a>6.indexOf()</h3><blockquote>
+<p>接收一个值</p>
+<p>indexOf() 方法可返回数组中某个指定的元素位置。</p>
+<p>该方法将从头到尾地检索数组，看它是否含有对应的元素。开始检索的位置在数组 start 处或数组的开头（没有指定 start 参数时）。如果找到一个 item，则返回 item 的第一次出现的位置。开始位置的索引为 0。</p>
+<p>如果在数组中没找到指定元素则返回 -1。</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><em>item</em></td>
+<td align="left">必须。查找的元素。</td>
+</tr>
+<tr>
+<td align="left"><em>start</em></td>
+<td align="left">可选的整数参数。规定在数组中开始检索的位置。它的合法取值是 0 到 stringObject.length - 1。如省略该参数，则将从字符串的首字符开始检索。</td>
+</tr>
+</tbody></table>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Banana"</span><span class="token punctuation">,</span> <span class="token string">"Orange"</span><span class="token punctuation">,</span> <span class="token string">"Apple"</span><span class="token punctuation">,</span> <span class="token string">"Mango"</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> fruits<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"Apple"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>a 的结果是2</p>
+</blockquote>
+<h3 id="7-lastIndexOf"><a href="#7-lastIndexOf" class="headerlink" title="7.lastIndexOf()"></a>7.lastIndexOf()</h3><blockquote>
+<p>接收一个值</p>
+<p>lastIndexOf() 方法可返回一个指定的元素在数组中最后出现的位置，从该字符串的后面向前查找。</p>
+<p>如果要检索的元素没有出现，则该方法返回 -1。</p>
+<p>该方法将从尾到头地检索数组中指定元素 item。开始检索的位置在数组的 start 处或数组的结尾（没有指定 start 参数时）。如果找到一个 item，则返回 item 从尾向前检索第一个次出现在数组的位置。数组的索引开始位置是从 0 开始的。</p>
+<p>如果在数组中没找到指定元素则返回 -1。</p>
+</blockquote>
+<h2 id="操作函数"><a href="#操作函数" class="headerlink" title="操作函数"></a>操作函数</h2><h3 id="1-fill"><a href="#1-fill" class="headerlink" title="1.fill()"></a>1.fill()</h3><blockquote>
+<p>接收一个值</p>
+<p>传入一个值，使用这个值来填充数组</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>value</td>
+<td>必须。当前元素</td>
+</tr>
+<tr>
+<td>start</td>
+<td>可选。开始填充位置</td>
+</tr>
+<tr>
+<td>end</td>
+<td>可选。停止填充位置</td>
+</tr>
+</tbody></table>
+</blockquote>
 
             </div>
             <hr/>
@@ -538,7 +726,7 @@ object-fit ：cover  设置图片的填充方式</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xuxiansheng.top/2020/07/03/css-za-xiang-sui-bi/">http://xuxiansheng.top/2020/07/03/css-za-xiang-sui-bi/</a>
+                    <a href="http://xuxiansheng.top/2020/07/05/js-chang-yong-de-shu-zu-fang-fa/">http://xuxiansheng.top/2020/07/05/js-chang-yong-de-shu-zu-fang-fa/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -576,12 +764,8 @@ object-fit ：cover  设置图片的填充方式</code></pre>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E9%9A%8F%E7%AC%94/">
-                                    <span class="chip bg-color">随笔</span>
-                                </a>
-                            
-                                <a href="/tags/css/">
-                                    <span class="chip bg-color">css</span>
+                                <a href="/tags/js/">
+                                    <span class="chip bg-color">js</span>
                                 </a>
                             
                         </div>
@@ -749,36 +933,36 @@ object-fit ：cover  设置图片的填充方式</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/03/js-za-xiang-sui-bi/">
+                <a href="/2020/07/05/js-chang-yong-de-shu-zu-fang-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="JS杂项--随笔">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="js常用的数组方法">
                         
-                        <span class="card-title">JS杂项--随笔</span>
+                        <span class="card-title">js常用的数组方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            JS杂项js常用方法
-获取数组中的最值
-Math.min.apply(null,Arr)
+                            遍历方法1.every()
+接收一个函数
+传入一个函数，使用函数检测数组所有元素是否都符合指定条件（通过函数提供）
 
-数据合并  对象合并
-this.model=Object.assign({},this.model,res.data)
+如果数组中检测到有一个元素不满足，则整个表达式返回 false ，且剩余的元素不会再进行检测。
 
-object.getBou
+如果所有元素都满足条件，
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -787,23 +971,16 @@ object.getBou
                                     js
                                 </a>
                             
-                            <a href="/categories/js/%E9%9A%8F%E7%AC%94/" class="post-category">
-                                    随笔
-                                </a>
-                            
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
                     <a href="/tags/js/">
                         <span class="chip bg-color">js</span>
-                    </a>
-                    
-                    <a href="/tags/%E9%9A%8F%E7%AC%94/">
-                        <span class="chip bg-color">随笔</span>
                     </a>
                     
                 </div>
@@ -814,24 +991,24 @@ object.getBou
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/03/css-za-xiang-sui-bi/">
+                <a href="/2020/07/03/shi-me-shi-webpack-wei-shi-me-yao-shi-yong-webpack-you-shi-me-you-dian-he-te-dian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="css杂项--随笔">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="什么是webpack？为什么要使用webpack？有什么优点和特点">
                         
-                        <span class="card-title">css杂项--随笔</span>
+                        <span class="card-title">什么是webpack？为什么要使用webpack？有什么优点和特点</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            常用的css属性z-index: 5;     设置权重，数字大的显示在上面，默认为1
-overflow: hidden;  可以用来清除浮动效果（给有浮动效果的父元素添加），溢出元素的部分隐藏
-opacity: 50%;   设置元素的透
+                            什么是webpack？为什么要使用它？
+什么是webpack
+WebPack可以看做是模块打包机：它做的事情是，分析你的项目结构，找到JavaScript模块以及其它的一些浏览器不能直接运行的拓展语言（Scss，TypeScript等），并
                         
                     </div>
                     <div class="publish-info">
@@ -842,28 +1019,19 @@ opacity: 50%;   设置元素的透
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/css/" class="post-category">
-                                    css
-                                </a>
-                            
-                            <a href="/categories/css/%E9%9A%8F%E7%AC%94/" class="post-category">
-                                    随笔
+                            <a href="/categories/webpack/" class="post-category">
+                                    webpack
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%9A%8F%E7%AC%94/">
-                        <span class="chip bg-color">随笔</span>
-                    </a>
-                    
-                    <a href="/tags/css/">
-                        <span class="chip bg-color">css</span>
+                    <a href="/tags/webpack/">
+                        <span class="chip bg-color">webpack</span>
                     </a>
                     
                 </div>
