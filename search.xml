@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>git忽略文件</title>
+      <link href="/2020/07/09/git-hu-lue-wen-jian/"/>
+      <url>/2020/07/09/git-hu-lue-wen-jian/</url>
+      
+        <content type="html"><![CDATA[<h2 id="文件名-gitignore"><a href="#文件名-gitignore" class="headerlink" title="文件名 .gitignore"></a>文件名 .gitignore</h2><pre><code>.DS_Storenode_modules/dist# local env files.env.local.env.*.local# Log filesnpm-debug.log*yarn-debug.log*yarn-error.log*pnpm-debug.log*# Editor directories and files.idea.vscode*.suo*.ntvs**.njsproj*.sln*.sw?</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>js常用的数组方法</title>
       <link href="/2020/07/05/js-chang-yong-de-shu-zu-fang-fa/"/>
       <url>/2020/07/05/js-chang-yong-de-shu-zu-fang-fa/</url>
