@@ -11,6 +11,12 @@
         <content type="html"><![CDATA[<h2 id="文件名-gitignore"><a href="#文件名-gitignore" class="headerlink" title="文件名 .gitignore"></a>文件名 .gitignore</h2><pre><code>.DS_Storenode_modules/dist# local env files.env.local.env.*.local# Log filesnpm-debug.log*yarn-debug.log*yarn-error.log*pnpm-debug.log*# Editor directories and files.idea.vscode*.suo*.ntvs**.njsproj*.sln*.sw?</code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> git </category>
+          
+      </categories>
+      
       
         <tags>
             
