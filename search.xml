@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>响应式布局</title>
+      <link href="/2020/07/15/xiang-ying-shi-bu-ju/"/>
+      <url>/2020/07/15/xiang-ying-shi-bu-ju/</url>
+      
+        <content type="html"><![CDATA[<h1 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h1><h2 id="1-设置meta标签"><a href="#1-设置meta标签" class="headerlink" title="1. 设置meta标签"></a>1. 设置meta标签</h2><blockquote><p>大多数移动浏览器将<a href="http://caibaojian.com/t/html" target="_blank" rel="noopener">HTML</a>页面放大为宽的视图（viewport）以符合屏幕分辨率。你可以使用视图的meta标签来进行重置。下面的视图标签告诉浏览器，使用设备的宽度作为视图宽度并禁止初始的缩放。在<code>&lt;head&gt;</code>标签里加入这个meta标签。</p><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width<span class="token punctuation">=</span>device-width, initial-scale<span class="token punctuation">=</span>1, maximum-scale<span class="token punctuation">=</span>1, user-scalable<span class="token punctuation">=</span>no<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre><p>（user-scalable = no 属性能够解决 iPad 切换横屏之后触摸才能回到具体尺寸的问题。 ）</p></blockquote><h2 id="2-通过媒体查询来设置样式"><a href="#2-通过媒体查询来设置样式" class="headerlink" title="2. 通过媒体查询来设置样式"></a>2. 通过媒体查询来设置样式</h2><blockquote><p>原文链接：<a href="http://caibaojian.com/356.html" target="_blank" rel="noopener">http://caibaojian.com/356.html</a></p><p>Media Queries 是响应式设计的核心。<a href="http://caibaojian.com/356.html" target="_blank" rel="noopener">·</a></p><p>它根据条件告诉浏览器如何为指定视图宽度渲染页面。假如一个终端的分辨率小于 980px，那么可以这样写：</p><pre class=" language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@media</span> screen and <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 980px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><span class="token selector"><span class="token id">#head</span> </span><span class="token punctuation">{</span> … <span class="token punctuation">}</span><span class="token selector"><span class="token id">#content</span> </span><span class="token punctuation">{</span> … <span class="token punctuation">}</span><span class="token selector"><span class="token id">#footer</span> </span><span class="token punctuation">{</span> … <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre><p>这里的样式就会覆盖上面已经定义好的样式。</p></blockquote><h2 id="百分比设置宽高"><a href="#百分比设置宽高" class="headerlink" title="百分比设置宽高"></a>百分比设置宽高</h2><h2 id="vh和vw"><a href="#vh和vw" class="headerlink" title="vh和vw"></a>vh和vw</h2><h2 id="rem布局"><a href="#rem布局" class="headerlink" title="rem布局"></a>rem布局</h2><blockquote><p>原理是，先按定高宽设计出来页面，然后转换为rem单位，<br>配合js查询屏幕大小来改变html的font-size，<br>最终做出所谓的完美自适应。</p></blockquote><h2 id="定宽度布局"><a href="#定宽度布局" class="headerlink" title="定宽度布局"></a>定宽度布局</h2><blockquote><p>很多pc的网站都是定宽度布局的，也就是设置了min-width，<br>这样一来，如果小于这个宽度就会出现滚动条，<br>如果大于这个宽度则内容居中外加背景，<br>这种设计常见与pc端。</p></blockquote><h1 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h1><ol><li><p>媒体查询</p><p>这种布局通吃pc和移动端，做到精细处，两者的效果都很好，<br>缺点是媒体查询是有限的，也就是可以枚举出来的，<br>只能适应主流的宽高。</p></li><li><p>rem</p><p>优点：理想状态是所有屏幕的高宽比和最初的设计高宽比一样，或者相差不多，完美适应。<br>缺点：碰到重视高度的设计，或者重视元素间间距的设计，那就玩不开了。</p></li></ol><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>1.如果只做pc端<br>    那么定宽度是最好的选择<br>2.如果做移动端，且设计对高度要求不高<br>    那么rem+js是最好的选择，一份css+一份js调节font-size搞定<br>3.如果pc，移动要兼容，而且要求很高，那么媒体查询是不错的选择</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> css </category>
+          
+          <category> 布局 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> css </tag>
+            
+            <tag> 布局 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>git忽略文件</title>
       <link href="/2020/07/09/git-hu-lue-wen-jian/"/>
       <url>/2020/07/09/git-hu-lue-wen-jian/</url>
