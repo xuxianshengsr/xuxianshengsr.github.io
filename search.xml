@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>hexo常用命令和常见问题</title>
+      <link href="/2020/09/06/hexo-chang-yong-ming-ling-he-chang-jian-wen-ti/"/>
+      <url>/2020/09/06/hexo-chang-yong-ming-ling-he-chang-jian-wen-ti/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、发布文章"><a href="#一、发布文章" class="headerlink" title="一、发布文章"></a>一、发布文章</h2><ol><li>进入博客所在目录，右键打开 Git Bash Here，创建博文：</li><li>hexo new “My New Post”</li><li>然后 source 文件夹中会出现一个 My New Post.md 文件，就可以使用 Markdown 编辑器在该文件中撰写文章了。</li><li>写完后运行下面代码将文章渲染并部署到 GitHub Pages 上完成发布。以后每次发布文章都是这两条命令。</li></ol><pre class=" language-git"><code class="language-git">hexo g   # 生成页面hexo d   # 部署发布</code></pre><h2 id="二、常用命令"><a href="#二、常用命令" class="headerlink" title="二、常用命令"></a>二、常用命令</h2><pre class=" language-git"><code class="language-git">hexo new <span class="token string">"name"</span>       # 新建文章hexo new page <span class="token string">"name"</span>  # 新建页面hexo g                # 生成页面hexo d                # 部署hexo g -d             # 生成页面并部署hexo s                # 本地预览hexo clean            # 清除缓存和已生成的静态文件hexo help             # 帮助</code></pre><h2 id="三、常见问题"><a href="#三、常见问题" class="headerlink" title="三、常见问题"></a>三、常见问题</h2><ol><li><p>设置网站图标</p><p>进入 themes/主题 文件夹，打开 _config.yml 配置文件，找到 favicon 修改，一般格式为：<code>favicon: 图标地址</code>。（不同主题可能略有差别）</p></li><li><p>修改并部署后没有效果</p><p>使用 <code>hexo clean</code> 清理后重新部署。</p></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>html杂项</title>
       <link href="/2020/09/06/html-za-xiang/"/>
       <url>/2020/09/06/html-za-xiang/</url>
