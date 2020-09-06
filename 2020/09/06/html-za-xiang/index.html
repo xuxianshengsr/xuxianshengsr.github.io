@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JS杂项--随笔, 徐先生">
+    <meta name="keywords" content="html杂项, 徐先生">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JS杂项--随笔 | 徐先生</title>
+    <title>html杂项 | 徐先生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JS杂项--随笔</h1>
+                    <h1 class="description center-align post-title">html杂项</h1>
                 </div>
             </div>
         </div>
@@ -430,31 +430,18 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/js/">
-                                <span class="chip bg-color">js</span>
+                            <a href="/tags/html/">
+                                <span class="chip bg-color">html</span>
                             </a>
                         
-                            <a href="/tags/%E9%9A%8F%E7%AC%94/">
-                                <span class="chip bg-color">随笔</span>
+                            <a href="/tags/%E6%9D%82%E9%A1%B9/">
+                                <span class="chip bg-color">杂项</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/js/" class="post-category">
-                                js
-                            </a>
-                        
-                            <a href="/categories/js/%E9%9A%8F%E7%AC%94/" class="post-category">
-                                随笔
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -463,7 +450,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-03
+                    2020-09-06
                 </div>
                 
 
@@ -477,7 +464,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    385
+                    38
                 </div>
                 
 
@@ -499,50 +486,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="JS杂项"><a href="#JS杂项" class="headerlink" title="JS杂项"></a>JS杂项</h1><h2 id="一、js常用方法"><a href="#一、js常用方法" class="headerlink" title="一、js常用方法"></a>一、js常用方法</h2><ol>
-<li><p>获取数组中的最值</p>
-<p><code>Math.min.apply(null,Arr)</code></p>
-</li>
-<li><p>数据合并  对象合并</p>
-<p><code>this.model=Object.assign({},this.model,res.data)</code></p>
-</li>
-<li><p><code>object.getBoundingClientRect();</code>会得到元素的<code>top、right、bottom、left、width、height</code>属性可以得到元素各个边距离页面上边和左边的距离</p>
-</li>
-<li><p>字符串解析为合法js执行</p>
-<p><code>eval()</code>函数计算 JavaScript 字符串，并把它作为脚本代码来执行。</p>
-</li>
-<li><p><code>arr.join(&quot;&amp;&quot;)</code> 数组转成字符串，使用&amp;为分隔符</p>
-</li>
-<li><p>str.trim() 去掉字符串头尾的空格</p>
-</li>
-<li><p>你可以使用 typeof 操作符来检测变量的数据类型。</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">typeof</span> <span class="token string">"John"</span>        <span class="token comment" spellcheck="true">// 返回 string</span>
-
-<span class="token keyword">typeof</span> <span class="token number">3.14</span>           <span class="token comment" spellcheck="true">// 返回 number</span>
-
-<span class="token keyword">typeof</span> <span class="token boolean">false</span>         <span class="token comment" spellcheck="true">// 返回 boolean</span>
-
-<span class="token keyword">typeof</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span>       <span class="token comment" spellcheck="true">// 返回 object</span>
-
-<span class="token keyword">typeof</span> <span class="token punctuation">{</span>name<span class="token punctuation">:</span><span class="token string">'John'</span><span class="token punctuation">,</span> age<span class="token punctuation">:</span><span class="token number">34</span><span class="token punctuation">}</span> <span class="token comment" spellcheck="true">// 返回 object</span></code></pre>
-</li>
+                <h2 id="阻止a标签的默认跳转"><a href="#阻止a标签的默认跳转" class="headerlink" title="阻止a标签的默认跳转"></a>阻止a标签的默认跳转</h2><ol>
+<li>href=”javascript:;”</li>
+<li>href=”javascript:void(0);”</li>
+<li>hrer=”#”</li>
+<li>hrer=”##”</li>
+<li>hrer=”!#”</li>
 </ol>
-<p><img src="https://ae01.alicdn.com/kf/H6f43d02c7d41420288e84ef3fec4727cA.jpg" alt=""></p>
-<h2 id="二、生成随机字符串"><a href="#二、生成随机字符串" class="headerlink" title="二、生成随机字符串"></a>二、生成随机字符串</h2><ol>
-<li><p>方法1</p>
-<pre class=" language-javascript"><code class="language-javascript">Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">36</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">8</span><span class="token punctuation">)</span>
-
-Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span>                        <span class="token comment" spellcheck="true">// 生成随机数字, eg: 0.123456</span>
-             <span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">36</span><span class="token punctuation">)</span>           <span class="token comment" spellcheck="true">// 转化成36进制 : "0.4fzyo82mvyr" </span>
-                          <span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 截取最后八位 : "yo82mvyr"</span>
-<span class="token comment" spellcheck="true">//36进制包含的字符为 0-9，a-z。</span></code></pre>
-</li>
-</ol>
-<p>缺点<br>        * 只能生成有 0-9、a-z字符组成的字符串<br>        * 由于 Math.random()生成的18位小数，可能无法填充36位，最后几个字符串，只能             在指    定的几个字符中选择。导致随机性降低。<br>        * 某些情况下会返回空值。例如，当随机数为 0, 0.5, 0.25, 0.125…时，返回        为空值。空值几率千万分之一<br>2. 方法2</p>
-<pre class=" language-javascript"><code class="language-javascript">   <span class="token keyword">function</span> <span class="token function">randomString</span><span class="token punctuation">(</span>length<span class="token punctuation">,</span> chars<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-       <span class="token keyword">var</span> result <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
-       <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> length<span class="token punctuation">;</span> i <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token operator">--</span>i<span class="token punctuation">)</span> result <span class="token operator">+</span><span class="token operator">=</span> chars<span class="token punctuation">[</span>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> chars<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-       <span class="token keyword">return</span> result<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token keyword">var</span> rString <span class="token operator">=</span> <span class="token function">randomString</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">,</span> <span class="token string">'0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<ul>
+<li>最好用的应该是第2个，可以根据需要来使用</li>
+</ul>
 
             </div>
             <hr/>
@@ -568,7 +521,7 @@ Math<span class="token punctuation">.</span><span class="token function">random<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xuxiansheng.top/2020/07/03/js-za-xiang-sui-bi/">http://xuxiansheng.top/2020/07/03/js-za-xiang-sui-bi/</a>
+                    <a href="http://xuxiansheng.top/2020/09/06/html-za-xiang/">http://xuxiansheng.top/2020/09/06/html-za-xiang/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -606,12 +559,12 @@ Math<span class="token punctuation">.</span><span class="token function">random<
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/js/">
-                                    <span class="chip bg-color">js</span>
+                                <a href="/tags/html/">
+                                    <span class="chip bg-color">html</span>
                                 </a>
                             
-                                <a href="/tags/%E9%9A%8F%E7%AC%94/">
-                                    <span class="chip bg-color">随笔</span>
+                                <a href="/tags/%E6%9D%82%E9%A1%B9/">
+                                    <span class="chip bg-color">杂项</span>
                                 </a>
                             
                         </div>
@@ -779,48 +732,58 @@ Math<span class="token punctuation">.</span><span class="token function">random<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/03/shi-me-shi-webpack-wei-shi-me-yao-shi-yong-webpack-you-shi-me-you-dian-he-te-dian/">
+                <a href="/2020/09/06/html-za-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="什么是webpack？为什么要使用webpack？有什么优点和特点">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="html杂项">
                         
-                        <span class="card-title">什么是webpack？为什么要使用webpack？有什么优点和特点</span>
+                        <span class="card-title">html杂项</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            什么是webpack？为什么要使用它？
-什么是webpack
-WebPack可以看做是模块打包机：它做的事情是，分析你的项目结构，找到JavaScript模块以及其它的一些浏览器不能直接运行的拓展语言（Scss，TypeScript等），并
+                            阻止a标签的默认跳转
+href=”javascript:;”
+href=”javascript:void(0);”
+hrer=”#”
+hrer=”##”
+hrer=”!#”
+
+
+最好用的应该是第2个，可以根据需要来使用
+
+
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-06
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/webpack/" class="post-category">
-                                    webpack
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            徐先生
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/webpack/">
-                        <span class="chip bg-color">webpack</span>
+                    <a href="/tags/html/">
+                        <span class="chip bg-color">html</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%9D%82%E9%A1%B9/">
+                        <span class="chip bg-color">杂项</span>
                     </a>
                     
                 </div>
@@ -834,37 +797,40 @@ WebPack可以看做是模块打包机：它做的事情是，分析你的项目�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/03/css-za-xiang-sui-bi/">
+                <a href="/2020/07/16/js-ji-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="css杂项--随笔">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="JS继承">
                         
-                        <span class="card-title">css杂项--随笔</span>
+                        <span class="card-title">JS继承</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一、常用的css属性z-index: 5;     设置权重，数字大的显示在上面，默认为1
-overflow: hidden;  可以用来清除浮动效果（给有浮动效果的父元素添加），溢出元素的部分隐藏
-opacity: 50%;   设置元素
+                            ES6继承 // ES6继承
+    //父类 People
+    class People{
+        constructor(name,age,sex){
+            this.name=name;
+        
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/css/" class="post-category">
-                                    css
+                            <a href="/categories/js/" class="post-category">
+                                    js
                                 </a>
                             
-                            <a href="/categories/css/%E9%9A%8F%E7%AC%94/" class="post-category">
-                                    随笔
+                            <a href="/categories/js/%E7%B1%BB/" class="post-category">
+                                    类
                                 </a>
                             
                             
@@ -874,12 +840,20 @@ opacity: 50%;   设置元素
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%9A%8F%E7%AC%94/">
-                        <span class="chip bg-color">随笔</span>
+                    <a href="/tags/js/">
+                        <span class="chip bg-color">js</span>
                     </a>
                     
-                    <a href="/tags/css/">
-                        <span class="chip bg-color">css</span>
+                    <a href="/tags/%E7%BB%A7%E6%89%BF/">
+                        <span class="chip bg-color">继承</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%B1%BB/">
+                        <span class="chip bg-color">类</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AF%B9%E8%B1%A1/">
+                        <span class="chip bg-color">对象</span>
                     </a>
                     
                 </div>
