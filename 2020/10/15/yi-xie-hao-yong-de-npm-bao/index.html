@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="html杂项, 徐先生">
+    <meta name="keywords" content="一些好用的npm包, 徐先生">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>html杂项 | 徐先生</title>
+    <title>一些好用的npm包 | 徐先生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">html杂项</h1>
+                    <h1 class="description center-align post-title">一些好用的npm包</h1>
                 </div>
             </div>
         </div>
@@ -428,33 +428,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/html/">
-                                <span class="chip bg-color">html</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%9D%82%E9%A1%B9/">
-                                <span class="chip bg-color">杂项</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/html/" class="post-category">
-                                html
-                            </a>
-                        
-                            <a href="/categories/html/%E6%9D%82%E9%A1%B9/" class="post-category">
-                                杂项
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -463,28 +442,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-06
+                    2020-10-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-09-15
+                    2020-10-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    247
+                    610
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -499,46 +478,132 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="阻止a标签的默认跳转"><a href="#阻止a标签的默认跳转" class="headerlink" title="阻止a标签的默认跳转"></a>阻止a标签的默认跳转</h2><ol>
-<li>href=”javascript:;”</li>
-<li>href=”javascript:void(0);”</li>
-<li>hrer=”#”</li>
-<li>hrer=”##”</li>
-<li>hrer=”!#”</li>
-</ol>
-<ul>
-<li>最好用的应该是第2个，可以根据需要来使用</li>
+                <h1 id="一些好用的npm包"><a href="#一些好用的npm包" class="headerlink" title="一些好用的npm包"></a>一些好用的npm包</h1><h2 id="node-后端"><a href="#node-后端" class="headerlink" title="node 后端"></a>node 后端</h2><h3 id="1-nodemon"><a href="#1-nodemon" class="headerlink" title="1.  nodemon"></a>1.  nodemon</h3><ul>
+<li><p>用来启动node服务</p>
+</li>
+<li><p>不用node index 了 , 在package.json 中配置命令 npm run serve 就可以启动了</p>
+<pre class=" language-json"><code class="language-json"><span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"serve"</span><span class="token operator">:</span> <span class="token string">"nodemon index.js"</span><span class="token punctuation">,</span>
+  <span class="token property">"test"</span><span class="token operator">:</span> <span class="token string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre>
+</li>
 </ul>
-<h2 id="h5新增表单属性，读取文件"><a href="#h5新增表单属性，读取文件" class="headerlink" title="h5新增表单属性，读取文件"></a>h5新增表单属性，读取文件</h2><pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>file<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myfile<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myfile<span class="token punctuation">"</span></span> <span class="token attr-name">onchange</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>getFileContent()<span class="token punctuation">"</span></span> <span class="token attr-name">multiple</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>300px<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
-    <span class="token comment" spellcheck="true">/*
-    FileReader:读取文件内容
-    1.readAsText():读取文本文件，（可以使用txt打开的文件），返回文本字符串，默认编编码utf-8
-    2.readAsBinaryString():读取任何文件，返回二进制 字符串
-    3.readAsDataURL():读取文件获取一段以data开头的字符串，这段字符串的本质就是DataURL。DataURL是一种将文件嵌入到文档的方案
-     */</span>
-    <span class="token keyword">function</span> <span class="token function">getFileContent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token comment" spellcheck="true">// 创建文件读取对象</span>
-      <span class="token keyword">var</span> reader<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">FileReader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token comment" spellcheck="true">//选择的文件以数组形式存在files中</span>
-      <span class="token keyword">var</span> file<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"myfile"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>files<span class="token punctuation">;</span>
-      reader<span class="token punctuation">.</span><span class="token function">readAsDataURL</span><span class="token punctuation">(</span>file<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      reader<span class="token punctuation">.</span>onload<span class="token operator">=</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          <span class="token comment" spellcheck="true">// console.log(reader.result);</span>
-          document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"img"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>src<span class="token operator">=</span>reader<span class="token punctuation">.</span>result<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="2-cors"><a href="#2-cors" class="headerlink" title="2.  cors"></a>2.  cors</h3><ul>
+<li><p>node 后端用来跨域 </p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> express<span class="token operator">=</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> app<span class="token operator">=</span><span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment" spellcheck="true">//跨域模块</span>
+  app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'cors'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">,</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'http://localhost:3000'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+</li>
+</ul>
+<h3 id="3-inflection"><a href="#3-inflection" class="headerlink" title="3.  inflection"></a>3.  inflection</h3><ul>
+<li>用来对字符串进行处理 如：</li>
+<li>小写变大写，复数变单数 – Mongoose schema 用的上<pre class=" language-javascript"><code class="language-javascript">  <span class="token keyword">const</span> modelName <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'inflection'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">classify</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>params<span class="token punctuation">.</span>resource<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+</li>
+</ul>
+<h3 id="4-http-assert"><a href="#4-http-assert" class="headerlink" title="4.  http-assert"></a>4.  http-assert</h3><ul>
+<li>node 后端用来抛出错误<pre class=" language-javascript"><code class="language-javascript">  <span class="token keyword">const</span> assert <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http-assert'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+</li>
+</ul>
+<pre><code>assert    (token , 401 , &#39;你的token有问题&#39;); // 检查token
+```</code></pre><h3 id="5-multer"><a href="#5-multer" class="headerlink" title="5.  multer"></a>5.  multer</h3><ul>
+<li>处理图片上传<pre class=" language-javascript"><code class="language-javascript">  <span class="token comment" spellcheck="true">//处理图片上传</span>
+      <span class="token keyword">const</span> multer<span class="token operator">=</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'multer'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+</li>
+</ul>
+<pre><code>    const upload=multer({dest:__dirname+&#39;../../../uploads&#39;});
+    //  file  接收图片的 字段名
+    app.post(&#39;/admin/api/upload&#39;,authMiddleware(),upload.single(&#39;file&#39;),async (req,res)=&gt;{
+        const file=req.file;
+        file.url=`http://localhost:3000/uploads/${file.filename}`;
+        res.send(file)
+    });
+```</code></pre><h2 id="6-bcript"><a href="#6-bcript" class="headerlink" title="6.  bcript"></a>6.  bcript</h2><ul>
+<li><p>$npm i bcryptjs 用来加密</p>
+</li>
+<li><p>在schema 中进行加密</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> mongoose<span class="token operator">=</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mongoose'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> schema<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">mongoose<span class="token punctuation">.</span>Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   username<span class="token punctuation">:</span><span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">}</span><span class="token punctuation">,</span>
+   password<span class="token punctuation">:</span><span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+      <span class="token comment" spellcheck="true">//这个字段默认不会被查询到</span>
+      select<span class="token punctuation">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token comment" spellcheck="true">//set是处理接收到的值的函数</span>
+      <span class="token comment" spellcheck="true">//val是password接收到的值</span>
+      <span class="token keyword">set</span><span class="token punctuation">:</span><span class="token keyword">function</span> <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token comment" spellcheck="true">//密码一般要加密存储，  hashSync（值，加密指数）  加密指数越高越安全，但是也越耗费时间</span>
+         <span class="token comment" spellcheck="true">//每次加密散列的值都不一样，都会生成新的hash  所以登陆验证不能将密码散列后来匹配</span>
+         <span class="token keyword">return</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'bcryptjs'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">hashSync</span><span class="token punctuation">(</span>val<span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports<span class="token operator">=</span>mongoose<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">"AdminUser"</span><span class="token punctuation">,</span>schema<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+</li>
+<li><p>在接口中进行明文密文校对</p>
+<pre class=" language-javascript"><code class="language-javascript"> app<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/admin/api/login'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> <span class="token punctuation">{</span> username<span class="token punctuation">,</span> password <span class="token punctuation">}</span> <span class="token operator">=</span> req<span class="token punctuation">.</span>body<span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 1.根据用户名找用户</span>
+        <span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token keyword">await</span> AdminUser<span class="token punctuation">.</span><span class="token function">findOne</span><span class="token punctuation">(</span><span class="token punctuation">{</span> username <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'+password'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">assert</span><span class="token punctuation">(</span>user<span class="token punctuation">,</span> <span class="token number">422</span><span class="token punctuation">,</span> <span class="token string">'用户不存在'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 2.校验密码  明文密文比较</span>
+        <span class="token keyword">const</span> isValid <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'bcryptjs'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">compareSync</span><span class="token punctuation">(</span>password<span class="token punctuation">,</span> user<span class="token punctuation">.</span>password<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">assert</span><span class="token punctuation">(</span>isValid<span class="token punctuation">,</span> <span class="token number">422</span><span class="token punctuation">,</span> <span class="token string">'密码错误'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 3.返回token</span>
+        <span class="token keyword">const</span> token <span class="token operator">=</span> jwt<span class="token punctuation">.</span><span class="token function">sign</span><span class="token punctuation">(</span><span class="token punctuation">{</span> id<span class="token punctuation">:</span> user<span class="token punctuation">.</span>_id <span class="token punctuation">}</span><span class="token punctuation">,</span> app<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'secret'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">{</span> token <span class="token punctuation">,</span>username<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+</li>
+</ul>
+<h3 id="7-jsonwebtoken"><a href="#7-jsonwebtoken" class="headerlink" title="7.  jsonwebtoken"></a>7.  jsonwebtoken</h3><ul>
+<li><p>node后端用来生成token</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> jwt <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'jsonwebtoken'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+   app<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/admin/api/login'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> <span class="token punctuation">{</span> username<span class="token punctuation">,</span> password <span class="token punctuation">}</span> <span class="token operator">=</span> req<span class="token punctuation">.</span>body<span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 1.根据用户名找用户</span>
+        <span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token keyword">await</span> AdminUser<span class="token punctuation">.</span><span class="token function">findOne</span><span class="token punctuation">(</span><span class="token punctuation">{</span> username <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'+password'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">assert</span><span class="token punctuation">(</span>user<span class="token punctuation">,</span> <span class="token number">422</span><span class="token punctuation">,</span> <span class="token string">'用户不存在'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 2.校验密码  明文密文比较</span>
+        <span class="token keyword">const</span> isValid <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'bcryptjs'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">compareSync</span><span class="token punctuation">(</span>password<span class="token punctuation">,</span> user<span class="token punctuation">.</span>password<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">assert</span><span class="token punctuation">(</span>isValid<span class="token punctuation">,</span> <span class="token number">422</span><span class="token punctuation">,</span> <span class="token string">'密码错误'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 3.返回token</span>
+        <span class="token keyword">const</span> token <span class="token operator">=</span> jwt<span class="token punctuation">.</span><span class="token function">sign</span><span class="token punctuation">(</span><span class="token punctuation">{</span> id<span class="token punctuation">:</span> user<span class="token punctuation">.</span>_id <span class="token punctuation">}</span><span class="token punctuation">,</span> app<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'secret'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">{</span> token <span class="token punctuation">,</span>username<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+</li>
+<li><p>在 index.js 中给token创建一个唯一标识符</p>
+<pre class=" language-javascript"><code class="language-javascript">app<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">'secret'</span><span class="token punctuation">,</span><span class="token string">'xuxianshengsr'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+</li>
+</ul>
+<h2 id="vue-前端"><a href="#vue-前端" class="headerlink" title="vue 前端"></a>vue 前端</h2><h2 id="1-vue2-editor"><a href="#1-vue2-editor" class="headerlink" title="1.  vue2-editor"></a>1.  vue2-editor</h2><ul>
+<li><p>富文本编辑器</p>
+<pre class=" language-vue"><code class="language-vue">    <vue-editor useCustomImageHandler @image-added="handleImageAdded" v-model="model.body"></vue-editor></code></pre>
+<pre class=" language-vue"><code class="language-vue">  <script>
+  // 导包，富文本编辑器
+      import { VueEditor } from "vue2-editor";
+
+      export default {
+          name: "CategoryEdit",
+          props:{
+              id:{}
+          },
+          components: {
+              VueEditor
+          },
+      }
+  </script></code></pre>
+</li>
+</ul>
 
             </div>
             <hr/>
@@ -564,7 +629,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xuxiansheng.top/2020/09/06/html-za-xiang/">http://xuxiansheng.top/2020/09/06/html-za-xiang/</a>
+                    <a href="http://xuxiansheng.top/2020/10/15/yi-xie-hao-yong-de-npm-bao/">http://xuxiansheng.top/2020/10/15/yi-xie-hao-yong-de-npm-bao/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -601,15 +666,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/html/">
-                                    <span class="chip bg-color">html</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%9D%82%E9%A1%B9/">
-                                    <span class="chip bg-color">杂项</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -775,52 +832,44 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/09/06/hexo-chang-yong-ming-ling-he-chang-jian-wen-ti/">
+                <a href="/2020/10/15/yi-xie-hao-yong-de-npm-bao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="hexo常用命令和常见问题">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="一些好用的npm包">
                         
-                        <span class="card-title">hexo常用命令和常见问题</span>
+                        <span class="card-title">一些好用的npm包</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一、发布文章
-进入博客所在目录，右键打开 Git Bash Here，创建博文：
-hexo new “My New Post”
-然后 source 文件夹中会出现一个 My New Post.md 文件，就可以使用 Markdown 编辑器
+                            一些好用的npm包node 后端1.  nodemon
+用来启动node服务
+
+不用node index 了 , 在package.json 中配置命令 npm run serve 就可以启动了
+"scripts": {
+    "serv
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-15
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/hexo/" class="post-category">
-                                    hexo
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            徐先生
                             
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
-                    </a>
-                    
-                </div>
+
                 
             </div>
         </div>
@@ -831,29 +880,27 @@ hexo new “My New Post”
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/16/js-ji-cheng/">
+                <a href="/2020/09/15/es7-es8-es9-es10-xin-te-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="JS继承">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="ES7、ES8、ES9、ES10新特性">
                         
-                        <span class="card-title">JS继承</span>
+                        <span class="card-title">ES7、ES8、ES9、ES10新特性</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ES6继承 // ES6继承
-    //父类 People
-    class People{
-        constructor(name,age,sex){
-            this.name=name;
-        
+                            ES7、ES8、ES9、ES10新特性一、ES20171. 对象尾逗号
+es2017允许函数对象的定义调用时参数可以加入尾逗号，以及json对象array对象都允许
+function test(num1,num2,){}
+test(1,2,
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-15
                             </span>
                         <span class="publish-author">
                             
@@ -863,8 +910,8 @@ hexo new “My New Post”
                                     js
                                 </a>
                             
-                            <a href="/categories/js/%E7%B1%BB/" class="post-category">
-                                    类
+                            <a href="/categories/js/es/" class="post-category">
+                                    es
                                 </a>
                             
                             
@@ -878,16 +925,8 @@ hexo new “My New Post”
                         <span class="chip bg-color">js</span>
                     </a>
                     
-                    <a href="/tags/%E7%BB%A7%E6%89%BF/">
-                        <span class="chip bg-color">继承</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%B1%BB/">
-                        <span class="chip bg-color">类</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%AF%B9%E8%B1%A1/">
-                        <span class="chip bg-color">对象</span>
+                    <a href="/tags/es/">
+                        <span class="chip bg-color">es</span>
                     </a>
                     
                 </div>
